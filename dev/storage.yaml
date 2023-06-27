@@ -5,5 +5,7 @@ metadata:
   annotations:
     storageclass.kubernetes.io/is-default-class: "true"
 provisioner: example.com/nfs
+mountOptions:
+- vers=4.1
 parameters:
   archiveOnDelete: "false"
